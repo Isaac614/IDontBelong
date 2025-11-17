@@ -15,22 +15,22 @@ A campus events calendar that helps students discover what's happening around ca
 ## Branch Commands
 
 ### Create a new branch
-git checkout -b <new-branch-name> (this creates a new branch and switches to it)
+`git checkout -b <new-branch-name>` (this creates a new branch and switches to it)
 
 ### Check current branch
-git branch
+`git branch`
 
 ### Switch branch 
-git checkout <branch-name>
+`git checkout <branch-name>`
 
 ## Add, Stage, and Push Changes
-When you are ready to add your changes to github, run git branch to make sure you're not on main. Then, run the following commands one at a time - 
-- git add .
-- git commit -m "<commit-message-here>"
+When you are ready to add your changes to github, run `git branch` to make sure you're not on main. Then, run the following commands one at a time: 
+- `git add .`
+- `git commit -m "<commit-message-here>"`
 ### Then
-### If this is you're first commit on your branch, run -
-git push --set-upstream origin <branch-name>
-### Otherwise, just run -
-git push
+### If this is your first commit on your branch, run:
+`git push --set-upstream origin <branch-name>`
+### Otherwise, just run:
+`git push`
 
-### If you did everything correctly you can then open github, go to the "pull requests" tab. There should then be an option to open a pull request. 
+### If you did everything correctly you can then open GitHub, go to the "pull requests" tab. There should then be an option to open a pull request.
