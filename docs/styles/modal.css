@@ -1,0 +1,29 @@
+/* BYUI Blue: #003F87
+Light Blue: #78AADB
+White: #FFFFFF
+Dark Gray: #2D2D2D */
+
+#modal {
+    width: 1000px;
+    height: 700px;
+    background-color: #78AADB;
+    border-radius: 20px;
+    border: #2D2D2D solid 8px;
+    z-index: -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 60px 40px 40px 1fr 70px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+#image {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    border-radius: 10px;
+}
+#title, #time, #location, #about {
+    color: black;
+    /* font-family: ; */
+}
