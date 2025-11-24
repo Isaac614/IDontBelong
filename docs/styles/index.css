@@ -1,0 +1,58 @@
+header h1 {
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 10px 100px 200px 1fr;
+    justify-items: center;
+    align-items: center;
+}
+#searchbar {
+    grid-column: 2/3;
+    grid-row: 2/3
+}
+#followedevents {
+    grid-column: 2/3;
+    grid-row: 3/4
+}
+#eventlist {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+#event {
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-template-rows: 1fr 1fr;
+    width: 600px;
+    height: 150px;
+}
+#image {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+}
+#event h4 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: start;
+    margin-bottom: 5px;
+}
+#event h5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: start;
+    justify-self: start;
+    margin-top: 5px;
+}
+#event button {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+}
