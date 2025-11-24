@@ -1,3 +1,11 @@
+/* BYUI Blue: #003F87
+Light Blue: #78AADB
+White: #F5F5F5
+Dark Gray: #2D2D2D */
+
+body {
+    background-color: #78AADB;
+}
 header h1 {
     text-align: center;
 }
@@ -19,6 +27,7 @@ main {
 #eventlist {
     grid-column: 2/3;
     grid-row: 4/5;
+    background-color: #78AADB;
 }
 #event {
     display: grid;
@@ -26,15 +35,20 @@ main {
     grid-template-rows: 1fr 1fr;
     width: 600px;
     height: 150px;
+    background-color: #003F87;
+    border: black solid 2px;
+    border-radius: 10px;
 }
 #image {
     width: 100px;
     height: 100px;
-    background-color: black;
+    background-color: #78AADB;
     grid-column: 1/2;
     grid-row: 1/3;
     align-self: center;
     justify-self: center;
+    border: black solid 2px;
+    border-radius: 10px;
 }
 #event h4 {
     grid-column: 2/3;
@@ -42,6 +56,7 @@ main {
     align-self: end;
     justify-self: start;
     margin-bottom: 5px;
+    color: #F5F5F5;
 }
 #event h5 {
     grid-column: 2/3;
@@ -49,10 +64,16 @@ main {
     align-self: start;
     justify-self: start;
     margin-top: 5px;
+    color: #F5F5F5;
 }
 #event button {
     grid-column: 3/4;
     grid-row: 1/3;
     align-self: center;
     justify-self: center;
+    height: 25px;
+    width: 60px;
+    border: black solid 1px;
+    border-radius: 20px;
+    background-color: #78AADB;
 }
