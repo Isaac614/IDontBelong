@@ -7,14 +7,20 @@ body {
     background-color: #78AADB;
 }
 
-header h1 {
-    margin: 0;
-    padding: 0;
-    height: 70px;
-    color: white;
+header {
     background-color: #002E5D;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+header h1 {
+    color: white;
     text-align: center;
 }
+
 
 h2 {
     text-align: center;
