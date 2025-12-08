@@ -3,6 +3,8 @@ import { supabase } from './config.js'
 
 await populate();
 
+document.querySelector('#search').addEventListener('input', filter)
+
 async function populate() {
     const {data, error} = await supabase
         .from('Events')
@@ -53,3 +55,20 @@ function createModal(event) {
 
     return modal;
 }
+
+
+function filter() {
+    const searchText = document.getElementById('search').value.toLowerCase();
+    const events = document.querySelectorAll('.modal');
+
+    events.forEach(event => {
+        const text = event.innerText.toLowerCase();
+
+        if (text.includes(searchText)) {
+            event.style.display = '';
+        } else {
+            event.style.display = 'none';
+        }
+    });
+}
+
